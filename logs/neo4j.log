@@ -1,0 +1,429 @@
+2018-03-28 20:45:30.135+0000 INFO  ======== Neo4j 3.3.4 ========
+2018-03-28 20:45:30.178+0000 INFO  Starting...
+2018-03-28 20:45:32.574+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2018-03-28 20:45:36.701+0000 INFO  Started.
+2018-03-28 20:45:37.945+0000 WARN  FAILED ServerConnector@bb38c49{HTTP/1.1}{127.0.0.1:7474}: java.net.BindException: Address already in use Address already in use
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:321)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:236)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:366)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.neo4j.server.web.Jetty9WebServer.startJetty(Jetty9WebServer.java:339)
+	at org.neo4j.server.web.Jetty9WebServer.start(Jetty9WebServer.java:154)
+	at org.neo4j.server.AbstractNeoServer.startWebServer(AbstractNeoServer.java:321)
+	at org.neo4j.server.AbstractNeoServer.access$700(AbstractNeoServer.java:102)
+	at org.neo4j.server.AbstractNeoServer$ServerComponentsLifecycleAdapter.start(AbstractNeoServer.java:541)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.start(LifeSupport.java:445)
+	at org.neo4j.kernel.lifecycle.LifeSupport.start(LifeSupport.java:107)
+	at org.neo4j.server.AbstractNeoServer.start(AbstractNeoServer.java:212)
+	at org.neo4j.server.ServerBootstrapper.start(ServerBootstrapper.java:111)
+	at org.neo4j.server.ServerBootstrapper.start(ServerBootstrapper.java:79)
+	at org.neo4j.server.CommunityEntryPoint.main(CommunityEntryPoint.java:32)
+2018-03-28 20:45:37.945+0000 WARN  FAILED ServerConnector@361483eb{SSL-HTTP/1.1}{127.0.0.1:7473}: java.net.BindException: Address already in use Address already in use
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:321)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:236)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:366)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.neo4j.server.web.Jetty9WebServer.startJetty(Jetty9WebServer.java:339)
+	at org.neo4j.server.web.Jetty9WebServer.start(Jetty9WebServer.java:154)
+	at org.neo4j.server.AbstractNeoServer.startWebServer(AbstractNeoServer.java:321)
+	at org.neo4j.server.AbstractNeoServer.access$700(AbstractNeoServer.java:102)
+	at org.neo4j.server.AbstractNeoServer$ServerComponentsLifecycleAdapter.start(AbstractNeoServer.java:541)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.start(LifeSupport.java:445)
+	at org.neo4j.kernel.lifecycle.LifeSupport.start(LifeSupport.java:107)
+	at org.neo4j.server.AbstractNeoServer.start(AbstractNeoServer.java:212)
+	at org.neo4j.server.ServerBootstrapper.start(ServerBootstrapper.java:111)
+	at org.neo4j.server.ServerBootstrapper.start(ServerBootstrapper.java:79)
+	at org.neo4j.server.CommunityEntryPoint.main(CommunityEntryPoint.java:32)
+2018-03-28 20:45:37.946+0000 WARN  FAILED org.eclipse.jetty.server.Server@35e357b: MultiException[java.net.BindException: Address already in use, java.net.BindException: Address already in use] Multiple exceptions
+MultiException[java.net.BindException: Address already in use, java.net.BindException: Address already in use]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:329)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.neo4j.server.web.Jetty9WebServer.startJetty(Jetty9WebServer.java:339)
+	at org.neo4j.server.web.Jetty9WebServer.start(Jetty9WebServer.java:154)
+	at org.neo4j.server.AbstractNeoServer.startWebServer(AbstractNeoServer.java:321)
+	at org.neo4j.server.AbstractNeoServer.access$700(AbstractNeoServer.java:102)
+	at org.neo4j.server.AbstractNeoServer$ServerComponentsLifecycleAdapter.start(AbstractNeoServer.java:541)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.start(LifeSupport.java:445)
+	at org.neo4j.kernel.lifecycle.LifeSupport.start(LifeSupport.java:107)
+	at org.neo4j.server.AbstractNeoServer.start(AbstractNeoServer.java:212)
+	at org.neo4j.server.ServerBootstrapper.start(ServerBootstrapper.java:111)
+	at org.neo4j.server.ServerBootstrapper.start(ServerBootstrapper.java:79)
+	at org.neo4j.server.CommunityEntryPoint.main(CommunityEntryPoint.java:32)
+	Suppressed: java.net.BindException: Address already in use
+		at sun.nio.ch.Net.bind0(Native Method)
+		at sun.nio.ch.Net.bind(Net.java:433)
+		at sun.nio.ch.Net.bind(Net.java:425)
+		at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+		at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+		at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:321)
+		at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+		at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:236)
+		at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+		at org.eclipse.jetty.server.Server.doStart(Server.java:366)
+		... 12 more
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:321)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:236)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:366)
+	... 12 more
+2018-03-28 20:45:37.946+0000 ERROR Failed to start Neo4j on 127.0.0.1:7474: Multiple exceptions
+2018-03-28 20:45:37.962+0000 INFO  Stopping...
+2018-03-28 20:45:37.994+0000 INFO  Stopped.
+2018-03-28 20:45:37.997+0000 ERROR Failed to start Neo4j: Starting Neo4j failed: Component 'org.neo4j.server.AbstractNeoServer$ServerComponentsLifecycleAdapter@510e6b93' was successfully initialized, but failed to start. Please see the attached cause exception "Address already in use". Starting Neo4j failed: Component 'org.neo4j.server.AbstractNeoServer$ServerComponentsLifecycleAdapter@510e6b93' was successfully initialized, but failed to start. Please see the attached cause exception "Address already in use".
+org.neo4j.server.ServerStartupException: Starting Neo4j failed: Component 'org.neo4j.server.AbstractNeoServer$ServerComponentsLifecycleAdapter@510e6b93' was successfully initialized, but failed to start. Please see the attached cause exception "Address already in use".
+	at org.neo4j.server.exception.ServerStartupErrors.translateToServerStartupError(ServerStartupErrors.java:68)
+	at org.neo4j.server.AbstractNeoServer.start(AbstractNeoServer.java:220)
+	at org.neo4j.server.ServerBootstrapper.start(ServerBootstrapper.java:111)
+	at org.neo4j.server.ServerBootstrapper.start(ServerBootstrapper.java:79)
+	at org.neo4j.server.CommunityEntryPoint.main(CommunityEntryPoint.java:32)
+Caused by: org.neo4j.kernel.lifecycle.LifecycleException: Component 'org.neo4j.server.AbstractNeoServer$ServerComponentsLifecycleAdapter@510e6b93' was successfully initialized, but failed to start. Please see the attached cause exception "Address already in use".
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.start(LifeSupport.java:466)
+	at org.neo4j.kernel.lifecycle.LifeSupport.start(LifeSupport.java:107)
+	at org.neo4j.server.AbstractNeoServer.start(AbstractNeoServer.java:212)
+	... 3 more
+Caused by: MultiException[java.net.BindException: Address already in use, java.net.BindException: Address already in use]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:329)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.neo4j.server.web.Jetty9WebServer.startJetty(Jetty9WebServer.java:339)
+	at org.neo4j.server.web.Jetty9WebServer.start(Jetty9WebServer.java:154)
+	at org.neo4j.server.AbstractNeoServer.startWebServer(AbstractNeoServer.java:321)
+	at org.neo4j.server.AbstractNeoServer.access$700(AbstractNeoServer.java:102)
+	at org.neo4j.server.AbstractNeoServer$ServerComponentsLifecycleAdapter.start(AbstractNeoServer.java:541)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.start(LifeSupport.java:445)
+	... 5 more
+	Suppressed: java.net.BindException: Address already in use
+		at sun.nio.ch.Net.bind0(Native Method)
+		at sun.nio.ch.Net.bind(Net.java:433)
+		at sun.nio.ch.Net.bind(Net.java:425)
+		at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+		at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+		at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:321)
+		at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+		at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:236)
+		at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+		at org.eclipse.jetty.server.Server.doStart(Server.java:366)
+		... 12 more
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:321)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:236)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:366)
+	... 12 more
+2018-03-28 20:45:37.998+0000 INFO  Neo4j Server shutdown initiated by request
+2018-03-28 20:46:39.233+0000 INFO  ======== Neo4j 3.3.4 ========
+2018-03-28 20:46:39.273+0000 INFO  Starting...
+2018-03-28 20:46:40.147+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2018-03-28 20:46:40.328+0000 INFO  Starting upgrade of database
+2018-03-28 20:46:40.344+0000 INFO  Migrating Indexes (1/5):
+2018-03-28 20:46:40.349+0000 INFO    10% completed
+2018-03-28 20:46:40.349+0000 INFO    20% completed
+2018-03-28 20:46:40.350+0000 INFO    30% completed
+2018-03-28 20:46:40.350+0000 INFO    40% completed
+2018-03-28 20:46:40.350+0000 INFO    50% completed
+2018-03-28 20:46:40.350+0000 INFO    60% completed
+2018-03-28 20:46:40.350+0000 INFO    70% completed
+2018-03-28 20:46:40.350+0000 INFO    80% completed
+2018-03-28 20:46:40.351+0000 INFO    90% completed
+2018-03-28 20:46:40.351+0000 INFO    100% completed
+2018-03-28 20:46:40.351+0000 INFO  Migrating Explicit indexes (2/5):
+2018-03-28 20:46:40.382+0000 INFO    10% completed
+2018-03-28 20:46:40.382+0000 INFO    20% completed
+2018-03-28 20:46:40.383+0000 INFO    30% completed
+2018-03-28 20:46:40.383+0000 INFO    40% completed
+2018-03-28 20:46:40.383+0000 INFO    50% completed
+2018-03-28 20:46:40.384+0000 INFO    60% completed
+2018-03-28 20:46:40.384+0000 INFO    70% completed
+2018-03-28 20:46:40.384+0000 INFO    80% completed
+2018-03-28 20:46:40.384+0000 INFO    90% completed
+2018-03-28 20:46:40.384+0000 INFO    100% completed
+2018-03-28 20:46:40.384+0000 INFO  Migrating Store files (3/5):
+2018-03-28 20:46:40.404+0000 INFO    10% completed
+2018-03-28 20:46:40.404+0000 INFO    20% completed
+2018-03-28 20:46:40.404+0000 INFO    30% completed
+2018-03-28 20:46:40.404+0000 INFO    40% completed
+2018-03-28 20:46:40.404+0000 INFO    50% completed
+2018-03-28 20:46:40.405+0000 INFO    60% completed
+2018-03-28 20:46:40.405+0000 INFO    70% completed
+2018-03-28 20:46:40.405+0000 INFO    80% completed
+2018-03-28 20:46:40.405+0000 INFO    90% completed
+2018-03-28 20:46:40.406+0000 INFO    100% completed
+2018-03-28 20:46:40.406+0000 INFO  Migrating Native label scan index (4/5):
+2018-03-28 20:46:40.489+0000 ERROR Failed to start Neo4j: Starting Neo4j failed: Component 'org.neo4j.server.database.LifecycleManagingDatabase@18025ced' was successfully initialized, but failed to start. Please see the attached cause exception "Id file not properly shutdown [ /Users/jb/Documents/Work/DC/ProviderBurden/Jupiter-Project/Version_3-4/NEO4J_HOME/data/databases/graph.db/neostore.nodestore.db.labels.id ], delete this id file and build a new one". Starting Neo4j failed: Component 'org.neo4j.server.database.LifecycleManagingDatabase@18025ced' was successfully initialized, but failed to start. Please see the attached cause exception "Id file not properly shutdown [ /Users/jb/Documents/Work/DC/ProviderBurden/Jupiter-Project/Version_3-4/NEO4J_HOME/data/databases/graph.db/neostore.nodestore.db.labels.id ], delete this id file and build a new one".
+org.neo4j.server.ServerStartupException: Starting Neo4j failed: Component 'org.neo4j.server.database.LifecycleManagingDatabase@18025ced' was successfully initialized, but failed to start. Please see the attached cause exception "Id file not properly shutdown [ /Users/jb/Documents/Work/DC/ProviderBurden/Jupiter-Project/Version_3-4/NEO4J_HOME/data/databases/graph.db/neostore.nodestore.db.labels.id ], delete this id file and build a new one".
+	at org.neo4j.server.exception.ServerStartupErrors.translateToServerStartupError(ServerStartupErrors.java:68)
+	at org.neo4j.server.AbstractNeoServer.start(AbstractNeoServer.java:220)
+	at org.neo4j.server.ServerBootstrapper.start(ServerBootstrapper.java:111)
+	at org.neo4j.server.ServerBootstrapper.start(ServerBootstrapper.java:79)
+	at org.neo4j.server.CommunityEntryPoint.main(CommunityEntryPoint.java:32)
+Caused by: org.neo4j.kernel.lifecycle.LifecycleException: Component 'org.neo4j.server.database.LifecycleManagingDatabase@18025ced' was successfully initialized, but failed to start. Please see the attached cause exception "Id file not properly shutdown [ /Users/jb/Documents/Work/DC/ProviderBurden/Jupiter-Project/Version_3-4/NEO4J_HOME/data/databases/graph.db/neostore.nodestore.db.labels.id ], delete this id file and build a new one".
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.start(LifeSupport.java:466)
+	at org.neo4j.kernel.lifecycle.LifeSupport.start(LifeSupport.java:107)
+	at org.neo4j.server.AbstractNeoServer.start(AbstractNeoServer.java:212)
+	... 3 more
+Caused by: java.lang.RuntimeException: Error starting org.neo4j.kernel.impl.factory.GraphDatabaseFacadeFactory, /Users/jb/Documents/Work/DC/ProviderBurden/Jupiter-Project/Version_3-4/NEO4J_HOME/data/databases/graph.db
+	at org.neo4j.kernel.impl.factory.GraphDatabaseFacadeFactory.initFacade(GraphDatabaseFacadeFactory.java:211)
+	at org.neo4j.kernel.impl.factory.GraphDatabaseFacadeFactory.newFacade(GraphDatabaseFacadeFactory.java:126)
+	at org.neo4j.server.CommunityNeoServer.lambda$static$0(CommunityNeoServer.java:58)
+	at org.neo4j.server.database.LifecycleManagingDatabase.start(LifecycleManagingDatabase.java:88)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.start(LifeSupport.java:445)
+	... 5 more
+Caused by: org.neo4j.kernel.lifecycle.LifecycleException: Component 'org.neo4j.kernel.NeoStoreDataSource@17a87e37' was successfully initialized, but failed to start. Please see the attached cause exception "Id file not properly shutdown [ /Users/jb/Documents/Work/DC/ProviderBurden/Jupiter-Project/Version_3-4/NEO4J_HOME/data/databases/graph.db/neostore.nodestore.db.labels.id ], delete this id file and build a new one".
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.start(LifeSupport.java:466)
+	at org.neo4j.kernel.lifecycle.LifeSupport.start(LifeSupport.java:107)
+	at org.neo4j.kernel.impl.transaction.state.DataSourceManager.start(DataSourceManager.java:100)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.start(LifeSupport.java:445)
+	at org.neo4j.kernel.lifecycle.LifeSupport.start(LifeSupport.java:107)
+	at org.neo4j.kernel.impl.factory.GraphDatabaseFacadeFactory.initFacade(GraphDatabaseFacadeFactory.java:207)
+	... 9 more
+Caused by: org.neo4j.kernel.impl.store.InvalidIdGeneratorException: Id file not properly shutdown [ /Users/jb/Documents/Work/DC/ProviderBurden/Jupiter-Project/Version_3-4/NEO4J_HOME/data/databases/graph.db/neostore.nodestore.db.labels.id ], delete this id file and build a new one
+	at org.neo4j.kernel.impl.store.id.IdContainer.readAndValidate(IdContainer.java:150)
+	at org.neo4j.kernel.impl.store.id.IdContainer.readHighId(IdContainer.java:160)
+	at org.neo4j.kernel.impl.store.id.IdGeneratorImpl.readHighId(IdGeneratorImpl.java:278)
+	at org.neo4j.kernel.impl.store.id.ReadOnlyIdGeneratorFactory$ReadOnlyIdGenerator.<init>(ReadOnlyIdGeneratorFactory.java:88)
+	at org.neo4j.kernel.impl.store.id.ReadOnlyIdGeneratorFactory.open(ReadOnlyIdGeneratorFactory.java:60)
+	at org.neo4j.kernel.impl.store.id.ReadOnlyIdGeneratorFactory.open(ReadOnlyIdGeneratorFactory.java:54)
+	at org.neo4j.kernel.impl.store.CommonAbstractStore.openIdGenerator(CommonAbstractStore.java:683)
+	at org.neo4j.kernel.impl.store.CommonAbstractStore.loadIdGenerator(CommonAbstractStore.java:366)
+	at org.neo4j.kernel.impl.store.CommonAbstractStore.loadStorage(CommonAbstractStore.java:229)
+	at org.neo4j.kernel.impl.store.CommonAbstractStore.checkAndLoadStorage(CommonAbstractStore.java:212)
+	at org.neo4j.kernel.impl.store.CommonAbstractStore.initialise(CommonAbstractStore.java:134)
+	at org.neo4j.kernel.impl.store.NeoStores.initialize(NeoStores.java:266)
+	at org.neo4j.kernel.impl.store.NeoStores.createDynamicArrayStore(NeoStores.java:536)
+	at org.neo4j.kernel.impl.store.NeoStores.createDynamicArrayStore(NeoStores.java:526)
+	at org.neo4j.kernel.impl.store.StoreType$1.open(StoreType.java:38)
+	at org.neo4j.kernel.impl.store.StoreType$1.open(StoreType.java:33)
+	at org.neo4j.kernel.impl.store.NeoStores.openStore(NeoStores.java:259)
+	at org.neo4j.kernel.impl.store.NeoStores.getOrCreateStore(NeoStores.java:304)
+	at org.neo4j.kernel.impl.store.NeoStores.<init>(NeoStores.java:148)
+	at org.neo4j.kernel.impl.store.StoreFactory.openNeoStores(StoreFactory.java:160)
+	at org.neo4j.kernel.impl.store.StoreFactory.openAllNeoStores(StoreFactory.java:114)
+	at org.neo4j.kernel.impl.storemigration.participant.NativeLabelScanStoreMigrator.migrate(NativeLabelScanStoreMigrator.java:74)
+	at org.neo4j.kernel.impl.storemigration.StoreUpgrader.migrateToIsolatedDirectory(StoreUpgrader.java:215)
+	at org.neo4j.kernel.impl.storemigration.StoreUpgrader.migrateIfNeeded(StoreUpgrader.java:135)
+	at org.neo4j.kernel.impl.storemigration.DatabaseMigrator.migrate(DatabaseMigrator.java:101)
+	at org.neo4j.kernel.NeoStoreDataSource.upgradeStore(NeoStoreDataSource.java:577)
+	at org.neo4j.kernel.NeoStoreDataSource.start(NeoStoreDataSource.java:436)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.start(LifeSupport.java:445)
+	... 14 more
+2018-03-28 20:46:40.490+0000 INFO  Neo4j Server shutdown initiated by request
+2018-03-30 15:04:41.902+0000 INFO  ======== Neo4j 3.3.4 ========
+2018-03-30 15:04:41.946+0000 INFO  Starting...
+2018-03-30 15:04:43.241+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2018-03-30 15:04:43.445+0000 INFO  Starting upgrade of database
+2018-03-30 15:04:43.475+0000 INFO  Migrating Indexes (1/5):
+2018-03-30 15:04:43.480+0000 INFO    10% completed
+2018-03-30 15:04:43.480+0000 INFO    20% completed
+2018-03-30 15:04:43.480+0000 INFO    30% completed
+2018-03-30 15:04:43.480+0000 INFO    40% completed
+2018-03-30 15:04:43.480+0000 INFO    50% completed
+2018-03-30 15:04:43.481+0000 INFO    60% completed
+2018-03-30 15:04:43.481+0000 INFO    70% completed
+2018-03-30 15:04:43.481+0000 INFO    80% completed
+2018-03-30 15:04:43.481+0000 INFO    90% completed
+2018-03-30 15:04:43.481+0000 INFO    100% completed
+2018-03-30 15:04:43.481+0000 INFO  Migrating Explicit indexes (2/5):
+2018-03-30 15:04:43.511+0000 INFO    10% completed
+2018-03-30 15:04:43.511+0000 INFO    20% completed
+2018-03-30 15:04:43.511+0000 INFO    30% completed
+2018-03-30 15:04:43.512+0000 INFO    40% completed
+2018-03-30 15:04:43.512+0000 INFO    50% completed
+2018-03-30 15:04:43.512+0000 INFO    60% completed
+2018-03-30 15:04:43.512+0000 INFO    70% completed
+2018-03-30 15:04:43.513+0000 INFO    80% completed
+2018-03-30 15:04:43.513+0000 INFO    90% completed
+2018-03-30 15:04:43.513+0000 INFO    100% completed
+2018-03-30 15:04:43.513+0000 INFO  Migrating Store files (3/5):
+2018-03-30 15:04:43.533+0000 INFO    10% completed
+2018-03-30 15:04:43.533+0000 INFO    20% completed
+2018-03-30 15:04:43.533+0000 INFO    30% completed
+2018-03-30 15:04:43.533+0000 INFO    40% completed
+2018-03-30 15:04:43.533+0000 INFO    50% completed
+2018-03-30 15:04:43.534+0000 INFO    60% completed
+2018-03-30 15:04:43.534+0000 INFO    70% completed
+2018-03-30 15:04:43.534+0000 INFO    80% completed
+2018-03-30 15:04:43.534+0000 INFO    90% completed
+2018-03-30 15:04:43.534+0000 INFO    100% completed
+2018-03-30 15:04:43.534+0000 INFO  Migrating Native label scan index (4/5):
+2018-03-30 15:04:43.645+0000 ERROR Failed to start Neo4j: Starting Neo4j failed: Component 'org.neo4j.server.database.LifecycleManagingDatabase@3f0846c6' was successfully initialized, but failed to start. Please see the attached cause exception "Id file not properly shutdown [ /Users/jb/Documents/Work/DC/ProviderBurden/Jupiter-Project/Version_3-4/NEO4J_HOME/data/databases/graph.db/neostore.nodestore.db.labels.id ], delete this id file and build a new one". Starting Neo4j failed: Component 'org.neo4j.server.database.LifecycleManagingDatabase@3f0846c6' was successfully initialized, but failed to start. Please see the attached cause exception "Id file not properly shutdown [ /Users/jb/Documents/Work/DC/ProviderBurden/Jupiter-Project/Version_3-4/NEO4J_HOME/data/databases/graph.db/neostore.nodestore.db.labels.id ], delete this id file and build a new one".
+org.neo4j.server.ServerStartupException: Starting Neo4j failed: Component 'org.neo4j.server.database.LifecycleManagingDatabase@3f0846c6' was successfully initialized, but failed to start. Please see the attached cause exception "Id file not properly shutdown [ /Users/jb/Documents/Work/DC/ProviderBurden/Jupiter-Project/Version_3-4/NEO4J_HOME/data/databases/graph.db/neostore.nodestore.db.labels.id ], delete this id file and build a new one".
+	at org.neo4j.server.exception.ServerStartupErrors.translateToServerStartupError(ServerStartupErrors.java:68)
+	at org.neo4j.server.AbstractNeoServer.start(AbstractNeoServer.java:220)
+	at org.neo4j.server.ServerBootstrapper.start(ServerBootstrapper.java:111)
+	at org.neo4j.server.ServerBootstrapper.start(ServerBootstrapper.java:79)
+	at org.neo4j.server.CommunityEntryPoint.main(CommunityEntryPoint.java:32)
+Caused by: org.neo4j.kernel.lifecycle.LifecycleException: Component 'org.neo4j.server.database.LifecycleManagingDatabase@3f0846c6' was successfully initialized, but failed to start. Please see the attached cause exception "Id file not properly shutdown [ /Users/jb/Documents/Work/DC/ProviderBurden/Jupiter-Project/Version_3-4/NEO4J_HOME/data/databases/graph.db/neostore.nodestore.db.labels.id ], delete this id file and build a new one".
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.start(LifeSupport.java:466)
+	at org.neo4j.kernel.lifecycle.LifeSupport.start(LifeSupport.java:107)
+	at org.neo4j.server.AbstractNeoServer.start(AbstractNeoServer.java:212)
+	... 3 more
+Caused by: java.lang.RuntimeException: Error starting org.neo4j.kernel.impl.factory.GraphDatabaseFacadeFactory, /Users/jb/Documents/Work/DC/ProviderBurden/Jupiter-Project/Version_3-4/NEO4J_HOME/data/databases/graph.db
+	at org.neo4j.kernel.impl.factory.GraphDatabaseFacadeFactory.initFacade(GraphDatabaseFacadeFactory.java:211)
+	at org.neo4j.kernel.impl.factory.GraphDatabaseFacadeFactory.newFacade(GraphDatabaseFacadeFactory.java:126)
+	at org.neo4j.server.CommunityNeoServer.lambda$static$0(CommunityNeoServer.java:58)
+	at org.neo4j.server.database.LifecycleManagingDatabase.start(LifecycleManagingDatabase.java:88)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.start(LifeSupport.java:445)
+	... 5 more
+Caused by: org.neo4j.kernel.lifecycle.LifecycleException: Component 'org.neo4j.kernel.NeoStoreDataSource@a202ccb' was successfully initialized, but failed to start. Please see the attached cause exception "Id file not properly shutdown [ /Users/jb/Documents/Work/DC/ProviderBurden/Jupiter-Project/Version_3-4/NEO4J_HOME/data/databases/graph.db/neostore.nodestore.db.labels.id ], delete this id file and build a new one".
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.start(LifeSupport.java:466)
+	at org.neo4j.kernel.lifecycle.LifeSupport.start(LifeSupport.java:107)
+	at org.neo4j.kernel.impl.transaction.state.DataSourceManager.start(DataSourceManager.java:100)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.start(LifeSupport.java:445)
+	at org.neo4j.kernel.lifecycle.LifeSupport.start(LifeSupport.java:107)
+	at org.neo4j.kernel.impl.factory.GraphDatabaseFacadeFactory.initFacade(GraphDatabaseFacadeFactory.java:207)
+	... 9 more
+Caused by: org.neo4j.kernel.impl.store.InvalidIdGeneratorException: Id file not properly shutdown [ /Users/jb/Documents/Work/DC/ProviderBurden/Jupiter-Project/Version_3-4/NEO4J_HOME/data/databases/graph.db/neostore.nodestore.db.labels.id ], delete this id file and build a new one
+	at org.neo4j.kernel.impl.store.id.IdContainer.readAndValidate(IdContainer.java:150)
+	at org.neo4j.kernel.impl.store.id.IdContainer.readHighId(IdContainer.java:160)
+	at org.neo4j.kernel.impl.store.id.IdGeneratorImpl.readHighId(IdGeneratorImpl.java:278)
+	at org.neo4j.kernel.impl.store.id.ReadOnlyIdGeneratorFactory$ReadOnlyIdGenerator.<init>(ReadOnlyIdGeneratorFactory.java:88)
+	at org.neo4j.kernel.impl.store.id.ReadOnlyIdGeneratorFactory.open(ReadOnlyIdGeneratorFactory.java:60)
+	at org.neo4j.kernel.impl.store.id.ReadOnlyIdGeneratorFactory.open(ReadOnlyIdGeneratorFactory.java:54)
+	at org.neo4j.kernel.impl.store.CommonAbstractStore.openIdGenerator(CommonAbstractStore.java:683)
+	at org.neo4j.kernel.impl.store.CommonAbstractStore.loadIdGenerator(CommonAbstractStore.java:366)
+	at org.neo4j.kernel.impl.store.CommonAbstractStore.loadStorage(CommonAbstractStore.java:229)
+	at org.neo4j.kernel.impl.store.CommonAbstractStore.checkAndLoadStorage(CommonAbstractStore.java:212)
+	at org.neo4j.kernel.impl.store.CommonAbstractStore.initialise(CommonAbstractStore.java:134)
+	at org.neo4j.kernel.impl.store.NeoStores.initialize(NeoStores.java:266)
+	at org.neo4j.kernel.impl.store.NeoStores.createDynamicArrayStore(NeoStores.java:536)
+	at org.neo4j.kernel.impl.store.NeoStores.createDynamicArrayStore(NeoStores.java:526)
+	at org.neo4j.kernel.impl.store.StoreType$1.open(StoreType.java:38)
+	at org.neo4j.kernel.impl.store.StoreType$1.open(StoreType.java:33)
+	at org.neo4j.kernel.impl.store.NeoStores.openStore(NeoStores.java:259)
+	at org.neo4j.kernel.impl.store.NeoStores.getOrCreateStore(NeoStores.java:304)
+	at org.neo4j.kernel.impl.store.NeoStores.<init>(NeoStores.java:148)
+	at org.neo4j.kernel.impl.store.StoreFactory.openNeoStores(StoreFactory.java:160)
+	at org.neo4j.kernel.impl.store.StoreFactory.openAllNeoStores(StoreFactory.java:114)
+	at org.neo4j.kernel.impl.storemigration.participant.NativeLabelScanStoreMigrator.migrate(NativeLabelScanStoreMigrator.java:74)
+	at org.neo4j.kernel.impl.storemigration.StoreUpgrader.migrateToIsolatedDirectory(StoreUpgrader.java:215)
+	at org.neo4j.kernel.impl.storemigration.StoreUpgrader.migrateIfNeeded(StoreUpgrader.java:135)
+	at org.neo4j.kernel.impl.storemigration.DatabaseMigrator.migrate(DatabaseMigrator.java:101)
+	at org.neo4j.kernel.NeoStoreDataSource.upgradeStore(NeoStoreDataSource.java:577)
+	at org.neo4j.kernel.NeoStoreDataSource.start(NeoStoreDataSource.java:436)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.start(LifeSupport.java:445)
+	... 14 more
+2018-03-30 15:04:43.646+0000 INFO  Neo4j Server shutdown initiated by request
+2018-04-02 18:55:03.710+0000 INFO  ======== Neo4j 3.3.4 ========
+2018-04-02 18:55:03.763+0000 INFO  Starting...
+2018-04-02 18:55:05.189+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2018-04-02 18:55:05.431+0000 INFO  Starting upgrade of database
+2018-04-02 18:55:05.462+0000 INFO  Migrating Indexes (1/5):
+2018-04-02 18:55:05.467+0000 INFO    10% completed
+2018-04-02 18:55:05.467+0000 INFO    20% completed
+2018-04-02 18:55:05.467+0000 INFO    30% completed
+2018-04-02 18:55:05.467+0000 INFO    40% completed
+2018-04-02 18:55:05.467+0000 INFO    50% completed
+2018-04-02 18:55:05.468+0000 INFO    60% completed
+2018-04-02 18:55:05.468+0000 INFO    70% completed
+2018-04-02 18:55:05.468+0000 INFO    80% completed
+2018-04-02 18:55:05.468+0000 INFO    90% completed
+2018-04-02 18:55:05.468+0000 INFO    100% completed
+2018-04-02 18:55:05.469+0000 INFO  Migrating Explicit indexes (2/5):
+2018-04-02 18:55:05.504+0000 INFO    10% completed
+2018-04-02 18:55:05.504+0000 INFO    20% completed
+2018-04-02 18:55:05.505+0000 INFO    30% completed
+2018-04-02 18:55:05.505+0000 INFO    40% completed
+2018-04-02 18:55:05.505+0000 INFO    50% completed
+2018-04-02 18:55:05.505+0000 INFO    60% completed
+2018-04-02 18:55:05.505+0000 INFO    70% completed
+2018-04-02 18:55:05.505+0000 INFO    80% completed
+2018-04-02 18:55:05.506+0000 INFO    90% completed
+2018-04-02 18:55:05.506+0000 INFO    100% completed
+2018-04-02 18:55:05.506+0000 INFO  Migrating Store files (3/5):
+2018-04-02 18:55:05.526+0000 INFO    10% completed
+2018-04-02 18:55:05.527+0000 INFO    20% completed
+2018-04-02 18:55:05.527+0000 INFO    30% completed
+2018-04-02 18:55:05.527+0000 INFO    40% completed
+2018-04-02 18:55:05.527+0000 INFO    50% completed
+2018-04-02 18:55:05.527+0000 INFO    60% completed
+2018-04-02 18:55:05.528+0000 INFO    70% completed
+2018-04-02 18:55:05.528+0000 INFO    80% completed
+2018-04-02 18:55:05.528+0000 INFO    90% completed
+2018-04-02 18:55:05.528+0000 INFO    100% completed
+2018-04-02 18:55:05.528+0000 INFO  Migrating Native label scan index (4/5):
+2018-04-02 18:55:05.644+0000 ERROR Failed to start Neo4j: Starting Neo4j failed: Component 'org.neo4j.server.database.LifecycleManagingDatabase@77a98a6a' was successfully initialized, but failed to start. Please see the attached cause exception "Id file not properly shutdown [ /Users/jb/Documents/Work/dc/ProviderBurden/Jupiter-Project/Version_3-4/NEO4J_HOME/data/databases/graph.db/neostore.nodestore.db.labels.id ], delete this id file and build a new one". Starting Neo4j failed: Component 'org.neo4j.server.database.LifecycleManagingDatabase@77a98a6a' was successfully initialized, but failed to start. Please see the attached cause exception "Id file not properly shutdown [ /Users/jb/Documents/Work/dc/ProviderBurden/Jupiter-Project/Version_3-4/NEO4J_HOME/data/databases/graph.db/neostore.nodestore.db.labels.id ], delete this id file and build a new one".
+org.neo4j.server.ServerStartupException: Starting Neo4j failed: Component 'org.neo4j.server.database.LifecycleManagingDatabase@77a98a6a' was successfully initialized, but failed to start. Please see the attached cause exception "Id file not properly shutdown [ /Users/jb/Documents/Work/dc/ProviderBurden/Jupiter-Project/Version_3-4/NEO4J_HOME/data/databases/graph.db/neostore.nodestore.db.labels.id ], delete this id file and build a new one".
+	at org.neo4j.server.exception.ServerStartupErrors.translateToServerStartupError(ServerStartupErrors.java:68)
+	at org.neo4j.server.AbstractNeoServer.start(AbstractNeoServer.java:220)
+	at org.neo4j.server.ServerBootstrapper.start(ServerBootstrapper.java:111)
+	at org.neo4j.server.ServerBootstrapper.start(ServerBootstrapper.java:79)
+	at org.neo4j.server.CommunityEntryPoint.main(CommunityEntryPoint.java:32)
+Caused by: org.neo4j.kernel.lifecycle.LifecycleException: Component 'org.neo4j.server.database.LifecycleManagingDatabase@77a98a6a' was successfully initialized, but failed to start. Please see the attached cause exception "Id file not properly shutdown [ /Users/jb/Documents/Work/dc/ProviderBurden/Jupiter-Project/Version_3-4/NEO4J_HOME/data/databases/graph.db/neostore.nodestore.db.labels.id ], delete this id file and build a new one".
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.start(LifeSupport.java:466)
+	at org.neo4j.kernel.lifecycle.LifeSupport.start(LifeSupport.java:107)
+	at org.neo4j.server.AbstractNeoServer.start(AbstractNeoServer.java:212)
+	... 3 more
+Caused by: java.lang.RuntimeException: Error starting org.neo4j.kernel.impl.factory.GraphDatabaseFacadeFactory, /Users/jb/Documents/Work/dc/ProviderBurden/Jupiter-Project/Version_3-4/NEO4J_HOME/data/databases/graph.db
+	at org.neo4j.kernel.impl.factory.GraphDatabaseFacadeFactory.initFacade(GraphDatabaseFacadeFactory.java:211)
+	at org.neo4j.kernel.impl.factory.GraphDatabaseFacadeFactory.newFacade(GraphDatabaseFacadeFactory.java:126)
+	at org.neo4j.server.CommunityNeoServer.lambda$static$0(CommunityNeoServer.java:58)
+	at org.neo4j.server.database.LifecycleManagingDatabase.start(LifecycleManagingDatabase.java:88)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.start(LifeSupport.java:445)
+	... 5 more
+Caused by: org.neo4j.kernel.lifecycle.LifecycleException: Component 'org.neo4j.kernel.NeoStoreDataSource@20f12539' was successfully initialized, but failed to start. Please see the attached cause exception "Id file not properly shutdown [ /Users/jb/Documents/Work/dc/ProviderBurden/Jupiter-Project/Version_3-4/NEO4J_HOME/data/databases/graph.db/neostore.nodestore.db.labels.id ], delete this id file and build a new one".
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.start(LifeSupport.java:466)
+	at org.neo4j.kernel.lifecycle.LifeSupport.start(LifeSupport.java:107)
+	at org.neo4j.kernel.impl.transaction.state.DataSourceManager.start(DataSourceManager.java:100)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.start(LifeSupport.java:445)
+	at org.neo4j.kernel.lifecycle.LifeSupport.start(LifeSupport.java:107)
+	at org.neo4j.kernel.impl.factory.GraphDatabaseFacadeFactory.initFacade(GraphDatabaseFacadeFactory.java:207)
+	... 9 more
+Caused by: org.neo4j.kernel.impl.store.InvalidIdGeneratorException: Id file not properly shutdown [ /Users/jb/Documents/Work/dc/ProviderBurden/Jupiter-Project/Version_3-4/NEO4J_HOME/data/databases/graph.db/neostore.nodestore.db.labels.id ], delete this id file and build a new one
+	at org.neo4j.kernel.impl.store.id.IdContainer.readAndValidate(IdContainer.java:150)
+	at org.neo4j.kernel.impl.store.id.IdContainer.readHighId(IdContainer.java:160)
+	at org.neo4j.kernel.impl.store.id.IdGeneratorImpl.readHighId(IdGeneratorImpl.java:278)
+	at org.neo4j.kernel.impl.store.id.ReadOnlyIdGeneratorFactory$ReadOnlyIdGenerator.<init>(ReadOnlyIdGeneratorFactory.java:88)
+	at org.neo4j.kernel.impl.store.id.ReadOnlyIdGeneratorFactory.open(ReadOnlyIdGeneratorFactory.java:60)
+	at org.neo4j.kernel.impl.store.id.ReadOnlyIdGeneratorFactory.open(ReadOnlyIdGeneratorFactory.java:54)
+	at org.neo4j.kernel.impl.store.CommonAbstractStore.openIdGenerator(CommonAbstractStore.java:683)
+	at org.neo4j.kernel.impl.store.CommonAbstractStore.loadIdGenerator(CommonAbstractStore.java:366)
+	at org.neo4j.kernel.impl.store.CommonAbstractStore.loadStorage(CommonAbstractStore.java:229)
+	at org.neo4j.kernel.impl.store.CommonAbstractStore.checkAndLoadStorage(CommonAbstractStore.java:212)
+	at org.neo4j.kernel.impl.store.CommonAbstractStore.initialise(CommonAbstractStore.java:134)
+	at org.neo4j.kernel.impl.store.NeoStores.initialize(NeoStores.java:266)
+	at org.neo4j.kernel.impl.store.NeoStores.createDynamicArrayStore(NeoStores.java:536)
+	at org.neo4j.kernel.impl.store.NeoStores.createDynamicArrayStore(NeoStores.java:526)
+	at org.neo4j.kernel.impl.store.StoreType$1.open(StoreType.java:38)
+	at org.neo4j.kernel.impl.store.StoreType$1.open(StoreType.java:33)
+	at org.neo4j.kernel.impl.store.NeoStores.openStore(NeoStores.java:259)
+	at org.neo4j.kernel.impl.store.NeoStores.getOrCreateStore(NeoStores.java:304)
+	at org.neo4j.kernel.impl.store.NeoStores.<init>(NeoStores.java:148)
+	at org.neo4j.kernel.impl.store.StoreFactory.openNeoStores(StoreFactory.java:160)
+	at org.neo4j.kernel.impl.store.StoreFactory.openAllNeoStores(StoreFactory.java:114)
+	at org.neo4j.kernel.impl.storemigration.participant.NativeLabelScanStoreMigrator.migrate(NativeLabelScanStoreMigrator.java:74)
+	at org.neo4j.kernel.impl.storemigration.StoreUpgrader.migrateToIsolatedDirectory(StoreUpgrader.java:215)
+	at org.neo4j.kernel.impl.storemigration.StoreUpgrader.migrateIfNeeded(StoreUpgrader.java:135)
+	at org.neo4j.kernel.impl.storemigration.DatabaseMigrator.migrate(DatabaseMigrator.java:101)
+	at org.neo4j.kernel.NeoStoreDataSource.upgradeStore(NeoStoreDataSource.java:577)
+	at org.neo4j.kernel.NeoStoreDataSource.start(NeoStoreDataSource.java:436)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.start(LifeSupport.java:445)
+	... 14 more
+2018-04-02 18:55:05.645+0000 INFO  Neo4j Server shutdown initiated by request
