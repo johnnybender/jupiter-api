@@ -3916,3 +3916,35 @@ Storage files: (filename : modification date - size)
 2018-03-28 20:42:50.209+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
 2018-03-28 20:42:51.886+0000 INFO  [o.n.k.i.DiagnosticsManager] --- SERVER STARTED START ---
 2018-03-28 20:42:53.288+0000 INFO  [o.n.k.i.DiagnosticsManager] --- SERVER STARTED END ---
+2018-03-29 01:14:34.185+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 457ms.
+2018-03-29 01:54:14.187+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 516ms.
+2018-03-29 06:24:36.185+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 562ms.
+2018-03-29 07:34:53.189+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 602ms.
+2018-03-29 14:35:14.194+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1303ms.
+2018-03-30 00:45:07.696+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 533ms.
+2018-03-30 02:05:40.195+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1266ms.
+2018-03-30 06:17:11.701+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 432ms.
+2018-03-30 14:48:07.687+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1254ms.
+2018-03-30 15:12:31.186+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 410ms.
+2018-03-30 15:35:11.851+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [301]:  Starting check pointing...
+2018-03-30 15:35:11.851+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [301]:  Starting store flush...
+2018-03-30 15:35:11.868+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 301 to [/Users/jb/Documents/Work/DC/ProviderBurden/Jupiter-Project/Version_2-3/NEO4J_HOME/data/graph.db/neostore.counts.db.b], from [/Users/jb/Documents/Work/DC/ProviderBurden/Jupiter-Project/Version_2-3/NEO4J_HOME/data/graph.db/neostore.counts.db.a].
+2018-03-30 15:35:11.886+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 301 to [/Users/jb/Documents/Work/DC/ProviderBurden/Jupiter-Project/Version_2-3/NEO4J_HOME/data/graph.db/neostore.counts.db.b], from [/Users/jb/Documents/Work/DC/ProviderBurden/Jupiter-Project/Version_2-3/NEO4J_HOME/data/graph.db/neostore.counts.db.a].
+2018-03-30 15:35:11.890+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [301]:  Store flush completed
+2018-03-30 15:35:11.890+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [301]:  Starting appending check point entry into the tx log...
+2018-03-30 15:35:11.890+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [301]:  Appending check point entry into the tx log completed
+2018-03-30 15:35:11.891+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [301]:  Check pointing completed
+2018-03-30 15:35:11.891+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [6]:  Starting log pruning.
+2018-03-30 15:35:11.891+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [6]:  Log pruning complete.
+2018-03-30 18:05:32.186+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 440ms.
+2018-03-31 05:40:53.663+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 467ms.
+2018-03-31 05:50:48.182+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 533ms.
+2018-03-31 08:48:51.184+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 418ms.
+2018-03-31 21:36:18.197+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1122ms.
+2018-04-01 01:09:01.183+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 460ms.
+2018-04-01 06:43:40.183+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 444ms.
+2018-04-01 07:53:57.183+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 537ms.
+2018-04-02 03:17:27.195+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1283ms.
+2018-04-02 07:08:06.183+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 465ms.
+2018-04-02 15:47:35.192+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1232ms.
+2018-04-03 00:17:27.751+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 483ms.
