@@ -54,4 +54,4 @@ detailed information.
 ## Commands for reference
 bin/neo4j start
 bin/neo4j stop
-bin/cypher-shell -u neo4j -p neo4j
+bin/cypher-shell -u neo4j -p admin
