@@ -1,0 +1,13 @@
+////// *** Node Parameter Specifications *** //////
+
+// Organization Parameters
+CREATE (n:Organization {lastUpdatedBy: "", fullNameDivision: "", contactName: "", informationValidatedBy: "", fullName: "", informationValidated: "", emailContact: "", shortNameDivision: "", missionLastUpdatedDate: "", lastUpdated: "", informationValidatedOn: "", mission: "", phoneContact: "", name: "", id: "", shortName: "", locationState: "", cdcEntity: "", locationCity: ""})
+
+// Tool Parameters
+Create (n:Tool {operationalStatus: "", evaluationDetails: "", conditionsUnderSurveillance: "", webResource: "", databaseTechnology: "", purpose: "", city: "", dataPayloadFormat: "", dataPayloadTransmissionType: "", fundingLevels: "", informationValidatedBy: "", informationValidated: "",surveillanceDomain: "", lastUpdated: "", operatingSystemPlatform: "", applicationSolutionType: "", state: "", id: "",startDateGeneration: "",Notes: "", lastUpdatedBy: "", overallCapability: "", contactEmail: "", contactName: "", surveillanceType: "", fullName: "",applicationPlatform: "", geographicCoverageArea: "", avrCapability: "", informationValidatedOn: "", evaluationDate: "", ageFormat: "", name: "",specialPopulations: "", reportFrequency: "", fundingSource: "", shortName: "", contactPhone: "", nationalBiosurveillanceStrategyMapping: "", startDate: "", patientTrackingCapability: ""})
+
+// Tag Parameters
+Create (n:Tag {name: "", tagRelationship: "", id: ""})
+
+// HealthSurvey Parameters
+Create (n:HealthSurvey {operationalStatus: "", evaluationDetails: "", conditionsUnderSurveillance: "", webResource: "", databaseTechnology: "", purpose: "", city: "", dataPayloadFormat: "", dataProvidersManual: "", dataPayloadTransmissionType: "", fundingLevels: "", informationValidatedBy: "", dataRecipientsElectronic: "", informationValidated: "", surveillanceDomain: "", lastUpdated: "", operatingSystemPlatform: "", applicationSolutionType: "", dataProvidersElectronic: "", state: "", id: "", startDateGeneration: "", Notes: "", lastUpdatedBy: "", overallCapability: "", contactEmail: "", contactName: "", surveillanceType: "", fullName: "", applicationPlatform: "", geographicCoverageArea: "", avrCapability: "", informationValidatedOn: "", evaluationDate: "", ageFormat: "", name: "", specialPopulations: "", reportFrequency: "", fundingSource: "", dataRecipientsManual: "", shortName: "", contactPhone: "", nationalBiosurveillanceStrategyMapping: "", startDate: "", patientTrackingCapability: ""})
