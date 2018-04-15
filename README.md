@@ -1,4 +1,4 @@
-## Project description and background:
+## Project description & background:
 
 This is an updated version of the catalog of CDC "Organizations", "Programs", "Surveillance Systems", "Registries", and "Tools" from the CDC Integrated Surveillance Portal (Apollo / Jupiter) project of the Public Health Informatics Research Lab. The original project / website is located here: [Jupiter project site](http://jupiter.phiresearchlab.org/), and the original GitHub repository is located here: [Jupiter project GitHub](https://github.com/informaticslab/jupiter).
 
